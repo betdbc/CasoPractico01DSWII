@@ -1,0 +1,37 @@
+package com.caso.practica.controlador;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class ProveedorControlador {
+	
+	@Autowired
+	private CategoriaServicio categoriaServicio;
+
+	@Autowired
+	private ProveedorServicio proveedorServicio;
+
+	@RequestMapping("/verProveedor")
+	public String ver() {
+		return "registraProveedor";
+	}
+
+	
+	@RequestMapping("/cargaCategoria")
+	@ResponseBody
+	public List<Categoria> lista() {
+		return categoriaServicio.listaCategoria();
+	}
+	
+	@RequestMapping(value="/registraProveedor")
+	public String regCategoria(Proveedor proveedor, HttpSession session) {
+		Proveedor aux = proveedorServicio.insertaProveedor(proveedor);
+		if(aux == null) {
+			session.setAttribute("MENSAJE", "Registro erróneo");
+		}else {
+			session.setAttribute("MENSAJE", "Registro exitoso");
+		}
+		return "redirect:verProveedor";
+	}
+
+}
