@@ -1,0 +1,40 @@
+package com.caso.practica.entidad;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
+@Table(name = "tb_proveedor")
+public class Proveedor {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int cod_proveedor;
+	
+	@Column(name = "raz_social_proveedor")
+	private String raz_social_proveedor;
+	
+	@Column(name = "dir_proveedor")
+	private String dir_proveedor;
+	
+	@Column(name = "ruc_proveedor")
+	private String ruc_proveedor;
+	
+	@Column(name = "fec_reg_proveedor")
+	private String fec_reg_proveedor;
+	
+	@ManyToOne
+	@JsonIgnore
+	@JoinColumn(name = "cod_categoria")
+	private Categoria categoria;
+	
+
+}

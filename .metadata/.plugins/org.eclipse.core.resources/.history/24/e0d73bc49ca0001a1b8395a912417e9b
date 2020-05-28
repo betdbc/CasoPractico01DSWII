@@ -1,0 +1,5 @@
+package com.caso.practica.entidad;
+
+public class Categoria {
+
+}
