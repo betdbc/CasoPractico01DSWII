@@ -573,3 +573,76 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-05-28 00:04:13.042
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:108)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:41)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:05:22.986
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ByhmVnwZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:05:23.004
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ByhmVnwZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:05:23.020
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:05:23.035
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ByhmVnwZ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:25.679
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:25.766
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1d86b636[org.springframework.tooling.boot.ls:1.17.0.202004200519(id=636)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:25.866
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:40.484
+!MESSAGE Boot LS startup time from start to initialized: 14486ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:41.114
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.eUHvWQPnisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:41.716
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:41.765
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:41.795
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:41.812
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:41.827
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:41.855
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:42.183
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.eUHvWQPn => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:42.520
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:42.602
+!MESSAGE buffering callback sts4.classpath.eUHvWQPn caso false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:42.634
+!MESSAGE executing callback sts4.classpath.eUHvWQPn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-28 00:06:42.899
+!MESSAGE executing callback sts4.classpath.eUHvWQPn SUCCESS [done]

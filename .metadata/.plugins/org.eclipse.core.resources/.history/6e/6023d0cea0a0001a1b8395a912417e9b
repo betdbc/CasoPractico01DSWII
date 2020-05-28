@@ -1,0 +1,23 @@
+package com.caso.practica.servicio;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.caso.practica.entidad.Categoria;
+import com.caso.practica.repositorio.CategoriaRepositorio;
+
+@Service
+public class CategoriaServiciolmpl implements CategoriaServicio {
+
+	@Autowired
+	private CategoriaRepositorio repositorio;
+	
+	@Override
+	public List<Categoria> listaCategoria() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
