@@ -86,6 +86,7 @@ INDEX VERSION 1.131+C:\Users\betsi\Desktop\CasoPractico01DAWII\.metadata\.plugin
 1857371720.index
 1878709787.index
 4051135590.index
+3945955168.index
 3823437678.index
 3335751325.index
 3699261069.index
